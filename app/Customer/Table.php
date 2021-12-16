@@ -8,7 +8,7 @@ class Table extends Model
 {
     public function getAll($idbethouse)
     {
-        $table = Db::table('reports')->get();
+        //$table = Db::table('reports')->get();
 
         return $table;
     }
