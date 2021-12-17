@@ -9,7 +9,7 @@ class Report extends Model
 {
     public static function getAll($idgamehouse)
     {
-        $gamehousedata = Db::table('reports')->get();
+        $gamehousedata = Db::table('reports')->where('id', '=', $idgamehouse)->get();
 
         return $gamehousedata;
     }
