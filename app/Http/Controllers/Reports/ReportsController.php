@@ -35,9 +35,9 @@ class ReportsController extends Controller
             'geninfo' => $object[0]->urlgenericinfo
         ];
         
-        $pdf = PDF::loadView('dailyreport.report', $obj)->setOptions(['defaultFont' => 'sans-serif', 'isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);
-        return $pdf->stream('report.pdf');
-        //return view('dailyreport.report', $obj);
+        // $pdf = PDF::loadView('dailyreport.report', $obj)->setOptions(['defaultFont' => 'sans-serif']);
+        // return $pdf->stream('report.pdf');
+        return view('dailyreport.report', $obj);
         
     }
 }
