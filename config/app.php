@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Game Reporter - Beta 0.0.1'),
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'America/Sao_Paulo',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'pt-BR',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -161,9 +161,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Barryvdh\DomPDF\ServiceProvider::class,
-        Meneses\LaravelMpdf\LaravelMpdfServiceProvider::class,
-
 
         /*
          * Package Service Providers...
@@ -227,9 +224,7 @@ return [
         'Str' => Illuminate\Support\Str::class,
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
-        'View' => Illuminate\Support\Facades\View::class,
-        'PDFOld' => Barryvdh\DomPDF\Facade::class,
-        'PDF' => Meneses\LaravelMpdf\Facades\LaravelMpdf::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
     ],
 
 ];

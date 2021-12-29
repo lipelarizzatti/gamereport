@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Foundation\Support\Providers\Provider as ServiceProvider;
+use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 
-class Provider extends ServiceProvider
+class AuthServiceProvider extends ServiceProvider
 {
     /**
      * The policy mappings for the application.
